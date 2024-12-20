@@ -1,0 +1,107 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a690f8, #f38a8a, hsl(110, 85%, 65%));
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-container {
+    max-width: 400px;
+    padding: 25px 30px;
+    background: #d0ece7;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.form-container:hover {
+    transform: translateY(-10px);
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #fd5000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #555;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #f7f7f9;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+    font-size: 1rem;
+    color: #333;
+    outline: none;
+}
+
+input:focus, textarea:focus {
+    background: #eef;
+    box-shadow: inset 0 3px 7px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    padding: 12px;
+    background: linear-gradient(135deg, #a690f8, #f38a8a, hsl(110, 85%, 65%));
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff758c, #ff7eb3);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+    background: linear-gradient(45deg, #ff5c4b, #ff6a5d);
+}
+
+@media screen and (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
